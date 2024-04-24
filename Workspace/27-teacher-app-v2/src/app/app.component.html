@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <app-add-teacher (add)="addTeacher($event)"></app-add-teacher>
+  </div>
+  <div>
+    <app-delete-teacher (delete)="deleteTeacher($event)"></app-delete-teacher>
+  </div>
+  <div>
+    <div *ngFor="let t of teachers">
+      <app-list-teachers [teacher]="t"></app-list-teachers>
+    </div>
+  </div>
+</div>

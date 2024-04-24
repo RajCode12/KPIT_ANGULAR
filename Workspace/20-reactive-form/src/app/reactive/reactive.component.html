@@ -1,0 +1,31 @@
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+    <div><p>Student Id</p></div>
+    <div><input type="number" formControlName="studentId"></div>
+
+    <div><p>Student Name</p></div>
+    <div><input type="text" formControlName="studentName"></div>
+
+    <div><p>Student Marks</p></div>
+    <div><input type="number" formControlName="studentMarks"></div>
+
+    <div>
+        <button type="submit" class="btn btn-danger" [disabled]="studentForm.invalid">Submit</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Student Id</th>
+                <th>Student Name</th>
+                <th>Student Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of students">
+                <td>{{s.studentId}}</td>
+                <td>{{s.studentName}}</td>
+                <td>{{s.studentMarks}}</td>
+            </tr>
+        </tbody>
+    </table>
+</form>

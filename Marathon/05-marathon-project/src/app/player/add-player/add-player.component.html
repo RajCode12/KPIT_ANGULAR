@@ -1,0 +1,18 @@
+<div>
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+        <label>Enter Id</label>
+        <div><input class="b" type="number" name="playerId" ngModel required></div>
+
+        <label>Enter Name</label>
+        <div><input class="b" type="text" name="playerName" ngModel required></div>
+
+        <label>Enter Age</label>
+        <div>
+            <input class="b" type="number" name="playerAge" ngModel required [max]="100" [min]="1">
+        </div>
+
+        <div>
+            <button class="box" type="submit" [disabled]="form.invalid">Submit</button>
+        </div>
+    </form>
+</div>

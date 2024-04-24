@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+    <div>
+        <div><p>Teacher Id</p></div>
+        <div><input type="number" name="teacherId" ngModel></div>
+    
+        <div><p>Teacher Name</p></div>
+        <div><input type="text" name="teacherName" ngModel></div>
+    
+        <div><p>Teacher Salary</p></div>
+        <div><input type="number" name="teacherSalary" ngModel></div>
+    </div>
+    <div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>

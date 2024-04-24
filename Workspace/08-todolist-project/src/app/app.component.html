@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">TODO-LIST APP</h1>
+    <p>This is your todo list app using Angular CLI.</p>
+  </div>
+
+  <div *ngIf="items.length>0; else noItems">
+    <div *ngFor="let i of items">
+      <app-list-items [item]="i"></app-list-items> 
+    </div>
+  </div>
+  <ng-template #noItems>
+    <p>No Items in the List</p>
+  </ng-template>
+
+  <div>
+    <app-add-item (add)="addItem($event)"></app-add-item>
+  </div>
+
+  <div *ngIf="items.length>0; else noItems">
+    <div>
+      <app-delete-item (delete)="deleteItem($event)"></app-delete-item>
+    </div>
+  </div>
+
+</div>

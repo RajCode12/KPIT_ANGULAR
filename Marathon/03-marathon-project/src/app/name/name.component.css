@@ -1,0 +1,9 @@
+.a{
+    color:red;
+    background-color: aqua;
+}
+.box{
+    border:1px black solid;
+    padding: 10px;
+    background-color: beige;
+}

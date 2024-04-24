@@ -1,0 +1,26 @@
+<h1 class="b">{{message}}</h1>
+<div class="container">
+    <h1 class="a">Registration Form</h1>
+    <form [formGroup]="registerForm" (ngSubmit)="registerUser()">
+        <label>Enter Username</label>
+        <div><input type="text" formControlName="username"></div>
+
+        <label>Enter Password</label>
+        <div><input type="password" formControlName="password"></div>
+
+        <label>Enter Email</label>
+        <div><input type="email" formControlName="email"></div>
+
+        <div>
+            <button class="box" type="submit" [disabled]="registerForm.invalid">Submit</button>
+        </div>
+    </form>
+</div>
+<!-- <div>
+    <h1 style="color:red; background-color: aquamarine;">User Details</h1>
+    <div style="background-color: rgb(203, 199, 199);">
+        <h3>{{user.username}}</h3>
+        <h3>{{user.password}}</h3>
+        <h3>{{user.email}}</h3>
+    </div>
+</div> -->

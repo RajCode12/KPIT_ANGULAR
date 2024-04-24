@@ -1,0 +1,14 @@
+<div>
+    <label>Id</label>
+    <div><input type="number" [(ngModel)]="student.id"></div>
+
+    <label>Name</label>
+    <div><input type="text" [(ngModel)]="student.name"></div>
+
+    <label>Marks</label>
+    <div><input type="number" [(ngModel)]="student.marks"></div>
+
+    <div>
+        <button class="box" (click)="addHandler()">Submit</button>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div>
+    <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+        <label>Id</label>
+        <div><input type="number" formControlName="id"></div>
+
+        <label>Password</label>
+        <div><input type="text" formControlName="password"></div>
+
+        <div>
+            <button type="submit" [disabled]="studentForm.invalid">Submit</button>
+        </div>
+    </form>
+</div>
+<div>
+    <h1 [ngStyle]="{'color':getBackgroundColor()}">{{message}}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of students">
+                <td>{{s.id}}</td>
+                <td>{{s.password}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

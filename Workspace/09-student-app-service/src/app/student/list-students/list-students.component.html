@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Student Id</th>
+            <th>Student Name</th>
+            <th>Student Marks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of students">
+            <th>{{s.studentId}}</th>
+            <th>{{s.studentName}}</th>
+            <th>{{s.studentMarks}}</th>
+        </tr>
+    </tbody>
+</table>

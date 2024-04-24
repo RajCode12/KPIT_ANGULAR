@@ -1,0 +1,52 @@
+{
+  "players": [
+    {
+      "playerId": 1,
+      "playerName": "Raj",
+      "playerAge": 20,
+      "id": "a97e"
+    },
+    {
+      "playerId": 2,
+      "playerName": "Dev",
+      "playerAge": 22,
+      "id": "d69c"
+    },
+    {
+      "id": "abca",
+      "playerId": 3,
+      "playerName": "Gaurav",
+      "playerAge": 30
+    },
+    {
+      "id": "fa8e",
+      "playerId": 4,
+      "playerName": "Aditya",
+      "playerAge": 78
+    },
+    {
+      "id": "bbfb",
+      "playerId": 5,
+      "playerName": "Prakash",
+      "playerAge": 67
+    },
+    {
+      "id": "4edb",
+      "playerId": 6,
+      "playerName": "Deva",
+      "playerAge": 56
+    },
+    {
+      "id": "0630",
+      "playerId": 7,
+      "playerName": "gayo",
+      "playerAge": 19
+    },
+    {
+      "id": "b85f",
+      "playerId": 8,
+      "playerName": "ghao",
+      "playerAge": 67
+    }
+  ]
+}

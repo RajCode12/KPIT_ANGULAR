@@ -1,0 +1,19 @@
+<div>
+    <label style="color: red; background-color: azure;">Teachers App</label>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of teachers">
+                <td>{{t.teacherId}}</td>
+                <td>{{t.name}}</td>
+                <td>{{t.salary}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

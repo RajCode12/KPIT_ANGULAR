@@ -1,0 +1,32 @@
+<div>
+    <h1 style="color:red; background-color: azure;">Login Form</h1>
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+        <label>Id</label>
+        <div><input type="number" name="id" ngModel required></div>
+
+        <label>Password</label>
+        <div><input type="text" name="password" ngModel required></div>
+
+        <div>
+            <button type="submit" class="box" [disabled]="form.invalid">Submit</button>
+        </div>
+    </form>
+</div>
+<div>
+    <h1 [ngStyle]="{'color':getBackgroundColor()}">{{message}}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of students">
+                <td>{{s.id}}</td>
+                <td>{{s.password}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

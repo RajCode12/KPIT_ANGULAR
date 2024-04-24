@@ -1,0 +1,10 @@
+<div>
+    <h1 class="a"> LastName : {{lastName}}</h1>
+    <p><input type="text" [(ngModel)]="lastName"></p>
+    <div *ngIf="lastName.length > 0 ? true : false">
+        <button class="box" (click)="onSubmit()">Submit</button>
+    </div>
+    <!-- <div>
+        <button [disabled]="lastName.length > 0 ? false : true" class="box" (click)="onSubmit()">Submit</button>
+    </div> -->
+</div>

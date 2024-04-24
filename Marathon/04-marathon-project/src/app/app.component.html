@@ -1,0 +1,15 @@
+<div>
+
+  <div>
+    <app-add-player (add)="addPlayer($event)"></app-add-player>
+  </div>
+
+  <div>
+    <h1 class="a">Player List</h1>
+    <div *ngFor="let p of players">
+      <app-list-players [player]="p"></app-list-players>
+      <hr>
+    </div>
+  </div>
+
+</div>

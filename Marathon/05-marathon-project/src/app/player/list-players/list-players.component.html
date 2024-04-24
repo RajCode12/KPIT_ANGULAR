@@ -1,0 +1,21 @@
+<div class="a">
+    <table class="b" [border]="true">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of players">
+                <td class="c">{{p.playerId}}</td>
+                <td class="c">{{p.playerName | titlecase}}</td>
+                <td class="c" [ngStyle]="{'background-color': getColor()}">{{p.playerAge}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+                
+

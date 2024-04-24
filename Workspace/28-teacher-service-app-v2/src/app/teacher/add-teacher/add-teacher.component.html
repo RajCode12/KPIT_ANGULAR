@@ -1,0 +1,15 @@
+<div>
+    <label>Id</label>
+    <div><input type="number" [(ngModel)]="teacher.id"></div>
+
+    <label>Name</label>
+    <div><input type="text" [(ngModel)]="teacher.name"></div>
+
+    <label>Salary</label>
+    <div><input type="number" [(ngModel)]="teacher.salary"></div>
+
+    <div>
+        <button class="box" (click)="addHandler()">Submit</button>
+        <button class="box" (click)="resetHandler()">Reset</button>
+    </div>
+</div>

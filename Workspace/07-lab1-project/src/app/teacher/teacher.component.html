@@ -1,0 +1,13 @@
+<div>
+    <p class="style2">{{id}}</p>
+    <p class="style2">{{teacherName}}</p>
+    <p class="style2">{{teacherAddress}}</p>
+</div>
+<div>
+    <p><input type="number" [(ngModel)]="id"></p>
+    <p><input type="text" [(ngModel)]="teacherName"></p>
+    <p><input type="text" [(ngModel)]="teacherAddress"></p>
+</div>
+<div>
+    <button class="box" (click)="clickHandler()">Reset</button>
+</div>

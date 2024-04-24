@@ -1,0 +1,14 @@
+<form (ngSubmit)="addHandler(form)" #form="ngForm">
+    <div>
+    <div><p>StudentId</p></div>
+    <div><input type="number" name="studentId" ngModel></div>
+    <div><p>StudentName</p></div>
+    <div><input type="text" name="studentName" ngModel></div>
+    <div><p>StudentMarks</p></div>
+    <div><input type="number" name="studentMarks" ngModel></div>
+    <div>
+        <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>
+        <button class="btn btn-danger"(click)="resetHandler(form)">Reset</button>
+    </div>
+</div>
+</form>

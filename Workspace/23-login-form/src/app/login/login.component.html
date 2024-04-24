@@ -1,0 +1,27 @@
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+    <h1 style="color:red; background-color: aquamarine; padding: 10px">Login Form</h1>
+    <div>
+        <h3 class="one">Enter Id</h3>
+        <p><input class="two" type="number" name="id" ngModel></p>
+
+        <h3 class="one">Enter Password</h3>
+        <p><input class="two" type="string" name="password" ngModel></p>
+    </div>
+    <div>
+        <button class="box" type="submit" [disabled]="form.invalid">Submit</button>
+    </div>
+</form>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of students let i = index" [ngStyle]="{'background-color':getBackgroundColor(i)}">
+            <td>{{s.id}}</td>
+            <td>{{s.password}}</td>
+        </tr>
+    </tbody>
+</table>

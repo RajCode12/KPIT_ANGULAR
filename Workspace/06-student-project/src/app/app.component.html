@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Student App</h1>
+    <p class="lead">This is a simple student app by using typescript class.</p>
+  </div>
+  <div *ngIf="students.length>0; else noStudent">
+    <div *ngFor="let s of students">
+      <app-list-students [student]="s"></app-list-students>
+    </div>
+  </div>
+  <ng-template #noStudent>
+    No Student Present
+  </ng-template>
+  <div>
+    <app-add-student (add)="addStudent($event)"></app-add-student>
+  </div>
+</div>

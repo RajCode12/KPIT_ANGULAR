@@ -1,0 +1,16 @@
+.one{
+   color:Blue;
+   text-size-adjust: 20px;
+   background-color: lightpink; 
+}
+.two{
+    color:black;
+    background-color: rgb(218, 212, 212);
+    padding: 8px;
+}
+.box{
+    border: 1px black solid;
+    padding: 10px;
+    background-color: salmon;
+    border-radius: 2px;
+}

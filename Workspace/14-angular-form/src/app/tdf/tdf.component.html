@@ -1,0 +1,29 @@
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+    <div>
+      <label>Student Id</label>
+      <input type="number" name="studentId" ngModel>
+    </div>
+    <div>
+      <label>Student Name</label>
+      <input type="text" name="studentName" ngModel>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-danger">Submit</button>
+    </div>
+  </form>
+  <!-- <div>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of forms">
+                <th>s.studentId</th>
+                <th>s.studentName</th>
+            </tr>
+        </tbody>
+      </table>
+  </div> -->

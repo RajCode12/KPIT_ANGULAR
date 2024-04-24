@@ -1,0 +1,14 @@
+{
+  "teacher": [
+    {
+      "teacherId": 101,
+      "name": "Raj",
+      "salary": 400000
+    },
+    {
+      "teacherId": 102,
+      "name": "Dev",
+      "salary": 500000
+    }
+  ]
+}

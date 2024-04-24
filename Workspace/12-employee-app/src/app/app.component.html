@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Employee App</h1>
+    <p class="lead">This is a simple Employee App.</p>
+  </div>
+
+  <div *ngFor="let e of employees; else noEmployee">
+    <div>
+      <app-list-employees [employee]="e"></app-list-employees>
+    </div>
+  </div>
+
+  <ng-template #noEmployee>
+    <p>No Employee Present</p>
+  </ng-template>
+
+  <div>
+    <app-add-employee (add)="addEmployee($event)"></app-add-employee>
+  </div>
+
+  <div>
+    <app-delete-employee (delete)="deleteEmployee($event)"></app-delete-employee>
+  </div>
+  
+</div>

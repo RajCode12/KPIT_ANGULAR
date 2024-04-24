@@ -1,0 +1,16 @@
+<div>
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+        <label>Enter Id</label>
+        <div><input type="number" name="teacherId" ngModel required></div>
+
+        <label>Enter Name</label>
+        <div><input type="text" name="name" ngModel required></div>
+
+        <label>Enter Salary</label>
+        <div><input type="number" name="salary" ngModel required></div>
+
+        <div>
+            <button type="submit" class="box" [disabled]="form.invalid">Submit</button>
+        </div>
+    </form>
+</div>

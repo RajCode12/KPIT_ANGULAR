@@ -1,0 +1,14 @@
+<div>
+    <div><p>Teacher Id</p></div>
+    <div><input type="number" [(ngModel)]="teacher.teacherId"></div>
+
+    <div><p>Teacher Name</p></div>
+    <div><input type="text" [(ngModel)]="teacher.teacherName"></div>
+
+    <div><p>Teacher Salary</p></div>
+    <div><input type="number" [(ngModel)]="teacher.teacherSalary"></div>
+</div>
+<div>
+    <button class="btn btn-primary" (click)="addHandler()">Submit</button>
+    <button class="btn btn-danger" (click)="resetHandler()">Reset</button>
+</div>

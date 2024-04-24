@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <app-add-student (add)="addStudent($event)"></app-add-student>
+  </div>
+  <div>
+    <app-delete-student (delete)="deleteStudent($event)"></app-delete-student>
+  </div>
+  <div>
+    <div *ngFor="let s of students">
+      <app-list-students [student]="s"></app-list-students>
+    </div>
+  </div>
+</div>

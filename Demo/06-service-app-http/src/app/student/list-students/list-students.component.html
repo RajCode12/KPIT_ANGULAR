@@ -1,0 +1,18 @@
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of students">
+                <td>{{s.id}}</td>
+                <td>{{s.name}}</td>
+                <td>{{s.marks}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

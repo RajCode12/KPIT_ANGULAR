@@ -1,0 +1,20 @@
+<div>
+    <div>
+        <p>Item Id</p>
+        <input type="number" [(ngModel)]="item.itemId">
+    </div>
+    <div>
+        <p>Item Name</p>
+        <input type="text" [(ngModel)]="item.itemName">
+    </div>
+    <div>
+        <p>Item Price</p>
+        <input type="number" [(ngModel)]="item.itemPrice">
+    </div>
+</div>
+<div>
+    <p>
+        <button class="box" (click)="addHandler()">AddItem</button>
+        <button class="box" (click)="resetHandler()">Reset</button>
+    </p>
+</div>
